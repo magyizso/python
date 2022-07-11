@@ -15,5 +15,8 @@ print(x)
 thisdict["color"] = "red"
 print(x)
 
+thisdict.update({"made" : "USA"})
+print(thisdict)
+
 if "model" in thisdict:
     print("Yes, model exists in this dict.")
