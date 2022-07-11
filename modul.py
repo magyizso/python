@@ -1,3 +1,6 @@
+from ensurepip import version
+from os import system
+import re
 import mymodul as mx
 
 mx.greeting("Jonathan")
@@ -7,7 +10,7 @@ print(a)
 
 import platform
 
-x = platform.system()
+x = platform.system_alias(system=system, release=platform.release, version=version)
 print(x)
 
 x = dir(platform)
