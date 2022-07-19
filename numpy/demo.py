@@ -12,7 +12,7 @@ print(np.__version__)
 arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print(arr2)
 
-arr3 = np.array([[[1, 2,3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+arr3 = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 print(arr3)
 
 print(arr0.ndim)
@@ -24,3 +24,4 @@ arr = np.array([1, 2, 3, 4], ndmin=5)
 
 print(arr)
 print('Number of dimensions of array:', arr.ndim)
+print(arr3[-1, -1, -1])
